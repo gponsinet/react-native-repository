@@ -10,11 +10,14 @@
     "yarn": "Please use npm 7 or later"
   },
   "scripts": {
-    "postinstall": "make postinstall",
+    "install": "make install",
     "prepare": "make prepare",
-    "release": "make release",
     "lint": "make lint",
-    "lint:fix": "make lint.fix"
+    "fix": "make fix",
+    "build:": "make build",
+    "run": "make run",
+    "release": "make release",
+    "publish": "make publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",

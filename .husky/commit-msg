@@ -2,4 +2,4 @@
 . "$(dirname $0)/_/husky.sh"
 
 export HUSKY_GIT_PARAMS=$1
-make commit-msg
+npx commitlint -E HUSKY_GIT_PARAMS
