@@ -4,13 +4,16 @@ typescript := $(lastword $(MAKEFILE_LIST))
 export VOLTA_HOME := $(HOME)/.volta
 export PATH := $(VOLTA_HOME)/bin:$(PATH)
 
-prepare:
+prepare: typescript.prepare
+typescript.prepare:
 	ln -sf eslint_d node_modules/.bin/eslint
 
-lint:
+lint: typescript.lint
+typescript.lint:
 	node_modules/.bin/eslint_d .
 
-fix:
+fix: typescript.fix
+typescript.fix:
 	node_modules/.bin/eslint_d fix .
 
 endif
