@@ -10,6 +10,7 @@
     "yarn": "Please use npm 7 or later"
   },
   "scripts": {
+    "preinstall": "make preinstall",
     "install": "make install",
     "prepare": "make prepare",
     "lint": "make lint",
