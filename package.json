@@ -9,17 +9,6 @@
     "node": ">=15.0.0",
     "yarn": "Please use npm 7 or later"
   },
-  "scripts": {
-    "preinstall": "make preinstall",
-    "install": "make install",
-    "prepare": "make prepare",
-    "lint": "make lint",
-    "fix": "make fix",
-    "build:": "make build",
-    "run": "make run",
-    "release": "make release",
-    "publish": "make publish"
-  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",

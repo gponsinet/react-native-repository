@@ -26,13 +26,12 @@ endif
 export VOLTA_HOME := $(HOME)/.volta
 export PATH := $(VOLTA_HOME)/bin:$(PATH)
 
-preinstall:
+install:
 	curl https://get.volta.sh | bash -s -- --skip-setup
 	volta install node@latest
 	volta pin node@latest
 	volta pin npm@7
-
-install:
+	npm install
 	npx husky install
 
 release:
